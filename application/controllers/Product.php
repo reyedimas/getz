@@ -10,10 +10,17 @@ class Product extends CI_Controller {
 
 	function index()
     {    
-          
+          if(isset($_SESSION['userdata']))
+          {
             $data['record']     =    $this->model_barang->tampil_data();
             $this->template->load('templateadmin','admin/view_product',$data);
             
+          }
+          else
+          {
+              redirect('loginadmin');
+          }
+           
 
     }
 
