@@ -3,11 +3,6 @@
         Data Slide
         <small>Getz Seat Cover</small>
       </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Tables</a></li>
-        <li class="active">Data tables</li>
-      </ol>
     </section>
 
     <!-- Main content -->
@@ -15,15 +10,12 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">Data Slide</h3>
-            </div>
             <!-- /.box-header -->
             <div class="box-body">
               <table id="example2" class="table table-bordered table-hover">
                 <thead>
                 <tr>
-                    <th style="text-align:center">Nama</th>
+                    <th style="text-align:center">Nama Slide</th>
                     <th style="text-align:center">Foto</th>
                     <th style="text-align:center">Aksi</th>
                 </tr>
@@ -34,8 +26,8 @@
                     foreach ($record->result() as $r) { ?>
                         <tr class="gradeU">
                             <td><?php echo $r->nama_slide ?></td>
-                            <td style="width: 200px;"><img style="width: 100%;" src="<?php echo base_url('assets/img/').$r->foto?>"></td>
-                            <td align="center">
+                            <td style="width: 300px;"><img style="width: 100%;" src="<?php echo base_url('assets/img/').$r->foto?>"></td>
+                            <td style="width: 250px;" align="center">
                                 <?php echo anchor('product/editslide/'.$r->id_slide,'Edit','class="btn btn-primary"'); ?> 
                                 <?php echo anchor('product/deleteslide/'.$r->id_slide,'Delete','class="btn btn-danger"'); ?>
                             </td>

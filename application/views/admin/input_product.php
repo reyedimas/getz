@@ -5,11 +5,6 @@
         Input Product
         <small>Getz Seat Cover</small>
       </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Forms</a></li>
-        <li class="active">General Elements</li>
-      </ol>
     </section>
 
     <!-- Main content -->
@@ -31,8 +26,8 @@
                                     <label>Deskripsi</label>
                                     <input type="text" class="form-control"name="deskripsi" placeholder="deskripsi" required>
                                 </div>
-                                <button type="submit" id="btnsimpanproduk" name="submit" class="btn btn-primary btn-sm" >Simpan</button> | 
-                                <?php echo anchor('produk','Kembali',array('class'=>'btn btn-danger btn-sm'))?>
+                                <button type="submit" id="btnsimpanproduk" name="submit" class="btn btn-primary btn-sm" >Simpan</button> 
+                                <?php echo anchor('product','Kembali',array('class'=>'btn btn-danger btn-sm'))?>
                            </form>
                             </div>
                         </div>

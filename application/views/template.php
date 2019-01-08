@@ -21,7 +21,6 @@
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="<?php echo base_url()?>assets/demo/demo.css" rel="stylesheet" />
   
-
   <!--   Core JS Files   -->
   <script src="<?php echo base_url()?>assets/js/core/jquery.min.js" type="text/javascript"></script>
   <script src="<?php echo base_url()?>assets/js/core/popper.min.js" type="text/javascript"></script>
@@ -55,12 +54,12 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a style="color:white;" class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/getz.cover?__tn__=%2CdC-R-R&eid=ARDkd298KHfgquKpNLVqMpi9JoW_X4HIjNGMn4B7T-KGz_p6u9lwtcM0Asb8N1xRo-py2BjnwO1QPp4K&hc_ref=ARQBJsRYLdo_m3Ud_R6WbtYvPXH0ydfES9wKHpRHBK7kjlwFbe397mzqe7YSZ6P_lmA&fref=nf" target="_blank" data-original-title="Like us on Facebook">
+            <a style="color:white;" class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/getz.cover?__tn__=%2CdC-R-R&eid=ARDkd298KHfgquKpNLVqMpi9JoW_X4HIjNGMn4B7T-KGz_p6u9lwtcM0Asb8N1xRo-py2BjnwO1QPp4K&hc_ref=ARQBJsRYLdo_m3Ud_R6WbtYvPXH0ydfES9wKHpRHBK7kjlwFbe397mzqe7YSZ6P_lmA&fref=nf" target="_blank">
               <i class="fa fa-facebook-square"></i>
             </a>
           </li>
           <li class="nav-item">
-            <a style="color:white;" class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/getz_seatcover" target="_blank" data-original-title="Follow us on Instagram">
+            <a style="color:white;" class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/getz_seatcover" target="_blank">
               <i class="fa fa-instagram"></i>
             </a>
           </li>
@@ -81,39 +80,14 @@
     </div>
   </div>
   <div class="main main-raised">
-    <!--        end notifications -->
     <div class="section" style="padding: 0px;">
       <div class="container tim-container">
-        <!--                 images -->
-       <?php echo $contents?>
-        <!--                 end images	             -->
+        <?php echo $contents?>
         <div class="space-50"></div>
       </div>
     </div>
-   
   </div> 
-  <!-- Classic Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <i class="material-icons">clear</i>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-link">Nice Button</button>
-          <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--  End Modal -->
+
   <footer class="footer" data-background-color="black">
     <div class="container">
       <nav class="float-left" style="text-align:left; color:white;">
@@ -140,11 +114,7 @@
     $(document).ready(function() {
       //init DateTimePickers
       materialKit.initFormExtendedDatetimepickers();
-
-      // Sliders Init
-   
     });
-
 
     function scrollToDownload() {
       if ($('.section-download').length != 0) {
@@ -154,13 +124,8 @@
       }
     }
 
-
     $(document).ready(function() {
-
     });
-
-   
   </script>
 </body>
-
 </html>

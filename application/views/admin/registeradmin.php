@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Registration Page</title>
+  <title>Getz Seat Cover - Registration Page</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -30,7 +30,7 @@
 <body class="hold-transition register-page">
 <div class="register-box">
   <div class="register-logo">
-    <a><b>Super Admin Ajeng Shop</b></a>
+    <a><b>Admin Getz Seat Cover</b></a>
   </div>
 
   <div class="register-box-body">
@@ -54,8 +54,8 @@
         <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
       </div>
         <!-- /.col -->
-        <div class="col-xs-4">
-          <button onclick="daftar()" class="btn btn-primary btn-block btn-flat">Register</button>
+        <div class="form-group has-feedback">
+          <button style="margin-right=20px" onclick="daftar()" class="btn btn-primary btn-block btn-flat">Register</button>
         </div>
         <!-- /.col -->
    
@@ -72,6 +72,13 @@
 <!-- iCheck -->
 <script src="<?php echo base_url('').'assets/'?>plugins/iCheck/icheck.min.js"></script>
 <script>
+$("#validatepassword").keydown(function(e){
+  var keycode = (e.keyCode ? e.keyCode : e.which);
+  if (keycode == '13'){
+    daftar();
+  }
+})
+
   $(function () {
     $('input').iCheck({
       checkboxClass: 'icheckbox_square-blue',

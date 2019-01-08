@@ -1,13 +1,8 @@
 <section class="content-header">
       <h1>
-        Data Product
+        Data Produk
         <small>Getz Seat Cover</small>
       </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Tables</a></li>
-        <li class="active">Data tables</li>
-      </ol>
     </section>
 
     <!-- Main content -->
@@ -15,9 +10,6 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">Data Product</h3>
-            </div>
             <!-- /.box-header -->
             <div class="box-body">
               <table id="example2" class="table table-bordered table-hover">
@@ -34,10 +26,10 @@
                     $no = $this->uri->segment('3');
                     foreach ($record->result() as $r) { ?>
                         <tr class="gradeU">
-                            <td><?php echo $r->nama_product ?></td>
+                            <td style="width: 250px;"><?php echo $r->nama_product ?></td>
                             <td style="width: 200px;"><img style="width: 100%;" src="<?php echo base_url('assets/img/').$r->foto?>"></td>
                             <td style="text-align:center"><?php echo $r->deskripsi ?></td>
-                            <td align="center">
+                            <td style="width: 250px;" align="center">
                                 <?php echo anchor('product/edit/'.$r->id_product,'Edit','class="btn btn-primary"'); ?> 
                                 <?php echo anchor('product/delete/'.$r->id_product,'Delete','class="btn btn-danger"'); ?>
                             </td>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ajeng Shop Admin</title>
+  <title>Getz Seat Cover Admin</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -30,15 +30,15 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index2.html"><b>Admin Ajeng Shop</b></a>
+    <a href="../../index2.html"><b>Getz Seat Cover</b></a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Sign in to start your session</p>
+    <p class="login-box-msg">Sign in</p>
 
 
       <div class="form-group has-feedback">
-        <input required id="username" type="username" name="username" class="form-control" placeholder="username">
+        <input required id="username" type="username" name="username" class="form-control" placeholder="Username">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
@@ -70,7 +70,7 @@
     </div> -->
     <!-- /.social-auth-links -->
 
-    <a href="<?php echo base_url()?>operator/post" class="text-center">Register a new membership</a>
+    <a href="<?php echo base_url()?>registeradmin" class="text-center">Register a new membership</a>
 
   </div>
   <!-- /.login-box-body -->
@@ -84,6 +84,13 @@
 <!-- iCheck -->
 <script src="<?php echo base_url('').'assets/'?>plugins/iCheck/icheck.min.js"></script>
 <script>
+$("#password").keydown(function(e){
+  var keycode = (e.keyCode ? e.keyCode : e.which);
+  if (keycode == '13'){
+    login();
+  }
+})
+
   $(function () {
     $('input').iCheck({
       checkboxClass: 'icheckbox_square-blue',

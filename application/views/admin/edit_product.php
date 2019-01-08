@@ -5,11 +5,6 @@
         Edit Product
         <small>Getz Seat Cover</small>
       </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Forms</a></li>
-        <li class="active">General Elements</li>
-      </ol>
     </section>
 
     <!-- Main content -->
@@ -32,8 +27,8 @@
                                     <label>Deskripsi</label>
                                     <input required type="text" id="deskripsi" class="form-control" name="deskripsi" placeholder="deskripsi" value="<?php echo $record->deskripsi?>" >
                                 </div>
-                                <button type="submit" id="btnsimpanbarang" name="submit" class="btn btn-primary btn-sm" >Update</button> | 
-                                <?php echo anchor('barang','Kembali',array('class'=>'btn btn-danger btn-sm'))?>
+                                <button type="submit" id="btnsimpanbarang" name="submit" class="btn btn-primary btn-sm" >Update</button> 
+                                <?php echo anchor('product','Kembali',array('class'=>'btn btn-danger btn-sm'))?>
                            </form>
                             </div>
                         </div>

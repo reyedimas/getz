@@ -53,3 +53,4 @@ $route['default_controller'] = 'home';
 $route['loginadmin'] = 'auth/loginadmin';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+$route['registeradmin'] = 'operator/post';
