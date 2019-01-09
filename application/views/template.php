@@ -72,7 +72,7 @@
       <div class="row">
         <div class="col-md-8 ml-auto mr-auto">
           <div class="brand">
-            <h1 style="font: 350% Cocogoose;">GETZ SEAT COVER</h1>
+            <h1 style="font: 350% Cocogoose;"></h1>
             <p>With over 6 years in the Auto Upholstery business, we consider ourselves a family team. Each of our employees has his or her own talent—all aimed at transforming your automobile! Our name is Getz Seat Cover</p>
           </div>
         </div>

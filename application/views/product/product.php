@@ -74,16 +74,15 @@
           </div>
           
           <div class="row">
-            <div class="col-md-12">
-              <div id="map">
+          <div style="margin-top:40px;" class="col-md-12">
+            <div>
+              <iframe width="100%" height="500" src="https://www.youtube.com/embed/ddewdIL5fiQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe>
             </div>
-          </div>
-          <div style="margin-top:20px;" class="col-md-12">
-          <div>
-            <iframe width="100%" height="500" src="https://www.youtube.com/embed/ddewdIL5fiQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-          </div>
-          </div>
+            </div>
+            <div class="col-md-12">
+              <div id="map"></div>
+            </div>
          </div>
     </div>
 
