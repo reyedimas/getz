@@ -24,6 +24,12 @@ class model_barang extends ci_model{
         $query= "SELECT * FROM slide where id_slide='".$id."'";
         return $this->db->query($query)->row();
     }
+
+    function tampilkan_image_detail($id)
+    {
+        $query= "SELECT foto FROM product where id_product='".$id."' ";
+        return $this->db->query($query);
+    }
     
     function post()
     {
